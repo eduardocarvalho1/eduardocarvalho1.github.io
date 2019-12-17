@@ -75,9 +75,9 @@
                         no
                         ídioma sem dificuldades. Sinta-se livre para me enviar uma mensagem <strong>(:</strong>
                     </span>
-                    <span id="descriptionTextEN" style="display: none">Hello there! My name is Eduardo Carvalho, tech
+                    <span id="descriptionTextEN" style="display: none">Hello there, My name is Eduardo Carvalho, tech
                         lover
-                        since I was in childhood. I got my first computer when I was 06 years old. From then untill now, I've been
+                        since I was in childhood. I got my first computer when I was 06 years old ever since I've been
                         behind keyboards and mouses. I'm studying Software Engine at "Universade Católica do Salvador -
                         Campus Pituaçu" and I just reached the 5º of 8 semesters.
                         <br><br>
@@ -85,7 +85,8 @@
                         studying about these technologies:
                         <strong> HTML, CSS, Bootstrap 4 e Javascript.</strong> Even though, I have a considerable
                         knowledge in others technologies lower level than those, for example:<strong> Java (Servlets),
-                            Postgres, Hibernate, Node.js, etc. </strong>Besides that, I'm enthusiastic in <strong>
+                            Postgres, Hibernate, Node.js entre
+                            outros.</strong>Besides that, I'm enthusiastic in <strong>
                             React</strong>. However, I need to increase my
                         knowledge about this last one and I'm scheduling to do that as soon as possible. <br><br>
                         I've finished important modules in my course, like <strong>Programming Logic, - which I was
@@ -242,7 +243,7 @@
 
                 <div id="descricaoExperiencias" class="row mb-2 text-dark text-justify">
                     <div class="col-12 col-md-6 border-right">
-                        <h5><strong>Empresa</strong></h5>
+                        <h5><strong id="empresa">Empresa</strong></h5>
 
                         <ul>
                             <li>Softwell Solutions (2019.6 ~ presente)</li>
@@ -251,7 +252,7 @@
 
                     </div>
                     <div class="col-12 col-md-6 border-right">
-                        <h5><strong>Cargo</strong></h5>
+                        <h5><strong id="cargo">Cargo</strong></h5>
 
                         <ul>
                             <li>Estagiário em testes</li>
@@ -326,7 +327,8 @@
             document.getElementById("descriptionTextBR").style.display = "block"
             document.getElementById("descriptionTextEN").style.display = "none"
             document.getElementById("quemSouEuTitulo").innerText = "Quem sou eu"
-
+            document.getElementById("empresa").innerText = "Empresa"
+            document.getElementById("cargo").innerText = "Cargo"
         } else if (idioma == "en") {
 
             document.getElementById("descriptionTextBR").style.display = "none"
@@ -334,7 +336,8 @@
             document.getElementById("quemSouEuTitulo").innerText = "Who I am"
             document.getElementById("comoUtil").innerText = "How I can be useful"
             document.getElementById("experienciaTitulo").innerText = "Experience"
-
+            document.getElementById("empresa").innerText = "Company"
+            document.getElementById("cargo").innerText = "Office"
         } else {
 
         }
