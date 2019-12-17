@@ -1,0 +1,76 @@
+html, body{
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+#wrapper{
+    display:flex;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: whitesmoke;
+
+}
+#sidebar{
+min-height: 100vh;
+width:25%;
+background-color: red;
+display:flex;
+flex-direction: column;
+}
+#sidebarHeader{
+    display:flex;
+    justify-content: center;
+}
+#navbar{
+ height: 4vh;
+ display: flex;
+ width: 75%;
+ justify-content: flex-end;
+ align-items: center;
+
+  }
+  #bodyContent{   
+display: flex;
+flex: 1 1;
+overflow: auto;
+justify-content: space-between;
+
+width: 75%;
+font-size: 1.2em
+  }
+  #bodyContent h3{
+      font-family: monospace;
+    
+  }
+  #descricaoComoPossoSerUtil{
+      font-family: monospace;
+      font-size: 1.3em;
+  }
+  
+
+
+
+  @media(max-width: 767px) {
+ #bodyContent, #navbar{
+     /* display: none !important; */
+     width: 100vw;
+     
+ }
+    #sidebar{
+        display:none;
+
+        width: 100vw;
+        height: 100vh;
+             
+    }
+    #sidebarToggle{
+        display: flex !important;
+    }
+    
+
+}

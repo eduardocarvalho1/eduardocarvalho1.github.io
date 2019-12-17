@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+
+    <title>Portfólio - Eduardo</title>
+</head>
+
+<body>
+    <div id="wrapper" class="d-flex flex-column">
+        <div id="sidebar" class="bg-danger">
+            <div id="sidebarHeader" class="p-3 d-flex flex-column">
+                <div id="sidebarToggle" style="cursor: pointer;" class="d-none align-self-end h-25">
+                    <i class=" fas fa-1x fa-times" onclick="toggleContent()"></i>
+                </div>
+
+                <img style="width: 200px; height: 200px; border-radius:50%;" class="bg-white border align-self-center"
+                    src="assets/core_icon">
+            </div>
+        </div>
+        <div id="navbar" class="bg-dark justify-contend-end">
+            <i class="fas fa-2x fa-envelope p-1 m-1 text-white"style="cursor: pointer" data-toggle="modal" data-target="#contatoForm"
+                ></i>
+
+        </div>
+        <div id="bodyContent" class="bg-white p-4 d-flex flex-column flex-fill overflow-auto">
+            <div class="d-flex flex-fill flex-column flex-wrap text-wrap p-2" id="quemSouEu">
+                <h3><i class="fas fa-user"></i> Quem sou eu </h3>
+                <div id="descricaoQuemSouEu" class="text-dark text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere maximus sem, eu venenatis
+                    orci consequat quis. Donec scelerisque ligula non orci imperdiet interdum. Vivamus dignissim, urna
+                    tincidunt faucibus lobortis, velit velit congue justo, non vestibulum eros dolor ut tellus. In at
+                    velit ac turpis imperdiet tempor. Aliquam in leo eget ligula dignissim semper.
+                </div>
+            </div>
+            <div class="d-flex flex-column p-2" id="comopossoserUtilId">
+                <h3><i class="fas fa-wrench"></i> Como posso ser útil </h3>
+                <div id="descricaoComoPossoSerUtil" class="row text-dark text-justify">
+                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id=""
+                        style="font-size: 1.2em;">
+                        <span>HTML 5</span>
+                        <div id="icons" class="text-warning">
+                            <i class="fas fa-graduation-cap"></i>
+                            <i class="fas fa-graduation-cap"></i>
+                            <i class="fas fa-graduation-cap"></i>
+                            <i class="fas fa-graduation-cap"></i>
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id=""
+                        style="font-size: 1.2em;">
+                        <span>CSS 3</span>
+                        <div id="icons" class="text-warning">
+                            <i class="fas fa-graduation-cap"></i>
+                            <i class="fas fa-graduation-cap"></i>
+                            <i class="fas fa-graduation-cap"></i>
+                            <i class="fas fa-graduation-cap"></i>
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id=""
+                        style="font-size: 1.2em;">
+                        <span>Bootstrap 4</span>
+                        <div id="icons" class="text-warning">
+                            <i class="fas fa-graduation-cap"></i>
+                            <i class="fas fa-graduation-cap"></i>
+                            <i class="fas fa-graduation-cap"></i>
+                            <i class="fas fa-graduation-cap"></i>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id=""
+                        style="font-size: 1.2em;">
+                        <span>Javascript</span>
+                        <div id="icons" class="text-warning">
+                            <i class="fas fa-graduation-cap"></i>
+                            <i class="fas fa-graduation-cap"></i>
+                            <i class="fas fa-graduation-cap"></i>
+                            <i class="fas fa-graduation-cap"></i>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id=""
+                        style="font-size: 1.2em;">
+                        <span>Java</span>
+                        <div id="icons" class="text-warning">
+                            <i class="fas fa-graduation-cap"></i>
+                            <i class="fas fa-graduation-cap"></i>
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id=""
+                        style="font-size: 1.2em;">
+                        <span>Git</span>
+                        <div id="icons" class="text-warning">
+                            <i class="fas fa-graduation-cap"></i>
+                            <i class="fas fa-graduation-cap"></i>
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id=""
+                        style="font-size: 1.2em;">
+                        <span>Hibernate</span>
+                        <div id="icons" class="text-warning">
+                            <i class="fas fa-graduation-cap"></i>
+                            <i class="fas fa-graduation-cap"></i>
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id=""
+                        style="font-size: 1.2em;">
+                        <span>jQuery</span>
+                        <div id="icons" class="text-warning">
+                            <i class="fas fa-graduation-cap"></i>
+                            <i class="fas fa-graduation-cap"></i>
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id=""
+                        style="font-size: 1.2em;">
+                        <span>Node.Js</span>
+                        <div id="icons" class="text-warning">
+                            <i class="fas fa-graduation-cap"></i>
+                            <i class="fas fa-graduation-cap"></i>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id=""
+                        style="font-size: 1.2em;">
+                        <span>Postgres</span>
+                        <div id="icons" class="text-warning">
+                            <i class="fas fa-graduation-cap"></i>
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id=""
+                        style="font-size: 1.2em;">
+                        <span>Photoshop</span>
+                        <div id="icons" class="text-warning">
+                            <i class="fas fa-graduation-cap"></i>
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id=""
+                        style="font-size: 1.2em;">
+                        <span>Metodologias ágeis</span>
+                        <div id="icons" class="text-warning">
+                            <i class="fas fa-graduation-cap"></i>
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id=""
+                        style="font-size: 1.2em;">
+                        <span>Flutter</span>
+                        <div id="icons" class="text-warning">
+                            <i class="fas fa-graduation-cap"></i>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id=""
+                        style="font-size: 1.2em;">
+                        <span>React</span>
+                        <div id="icons" class="text-warning">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="d-flex flex-column p-2" id="quemSouEu">
+                <h3><i class="fas fa-briefcase"></i> Experiências </h3>
+
+                <div id="descricaoExperiencias" class="row mb-2 text-dark text-justify">
+                    <div class="col-12 col-md-6 border-right">
+                        <h5><strong>Empresa</strong></h5>
+                       
+                           <ul>
+                               <li>Softwell Solutions (2019.6 ~ presente)</li>
+                               <li>UCSAL (2018.6 ~ 2018.12)</li>
+                           </ul>
+                    
+                    </div>
+                    <div class="col-12 col-md-6 border-right">
+                        <h5><strong>Cargo</strong></h5>
+                       
+                           <ul>
+                               <li>Estagiário em testes</li>
+                               <li>Monitor em Lógica de</li>
+                           </ul>
+                    
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+    <div class="modal fade" id="contatoForm" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content p-2">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="TituloModalCentralizado">Formulário de Contato</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form method="POST">
+                        <div class="form-group row">
+                            <div class="col">
+                                <label for="nomeForm">Nome:</label>
+                                <input id="nomeForm" type="text" class="form-control" placeholder="First name" required>
+                            </div>
+                            <div class="col">
+                                <label for="sobrenomeForm">Sobrenome:</label>
+                                <input id="sobrenomeForm" type="text" class="form-control" placeholder="Last name"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Endereço de e-mail:</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" required placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">Seu e-mail jamais será
+                                compartilhado.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Mensagem: </label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" required
+                                rows="3"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-block btn-outline-primary"><i
+                                class="fas fa-2x fa-envelope"></i></button>
+
+
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    function toggleContent() {
+
+    }
+
+</script>
+
+</html>
