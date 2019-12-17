@@ -29,18 +29,18 @@
     <div id="wrapper" class="d-flex flex-column">
         <div id="sidebar" class="bg-danger">
             <div id="sidebarHeader" class="p-3 d-flex flex-column">
-                <div id="sidebarToggle" style="cursor: pointer;" class="d-none align-self-end h-25">
-                    <i class=" fas fa-1x fa-times" onclick="toggleContent()"></i>
+                <div id="sidebarToggle" style="cursor: pointer;" class="d-none align-self-end h-25 p-3 ">
+                    <i class=" fas fa-2x fa-times" onclick="toggleContent('side')"></i>
                 </div>
 
                 <img style="width: 200px; height: 200px; border-radius:50%;" class="bg-white border align-self-center"
                     src="core_icon">
             </div>
         </div>
-        <div id="navbar" class="bg-dark d-sm-flex d-none justify-contend-end">
+        <div id="navbar" class="bg-dark p-2 justify-contend-end">
             <img src="brazili-flaf.png" class="p-1" onclick="translateContent('br')"
                 style="cursor: pointer; width: 35px; height: 25px;">
-    <!--  <img src="spain_flag.jpg" class="p-1" onclick="translateContent('sp')"
+            <!--  <img src="spain_flag.jpg" class="p-1" onclick="translateContent('sp')"
                 style="cursor: pointer; width: 35px; height: 25px;"> -->
             <img src="english_flag.png" class="p-1" onclick="translateContent('en')"
                 style="cursor: pointer; width: 35px; height: 25px;">
@@ -48,7 +48,8 @@
                 data-target="#contatoForm"></i>
 
         </div>
-        <div id="bodyContent" class="bg-white p-4 d-flex flex-column flex-fill overflow-auto">
+        <div id="bodyContent" class="bg-white p-4 flex-column flex-fill overflow-auto">
+            <div id="hamburguerToggle" onclick="toggleContent('')" class="fas fa-bars align-self-end mr-4 fa-2x" style="display: none; position: fixed; opacity: 0.4;"></div>
             <div class="d-flex flex-fill flex-column flex-wrap text-wrap p-2 mb-3" id="quemSouEu">
                 <h3><i class="fas fa-user"></i> <span id="quemSouEuTitulo">Quem sou eu </span></h3>
                 <div id="descricaoQuemSouEu" class="text-dark text-justify" style="font-size: 0.9em;">
@@ -60,10 +61,10 @@
                         <br><br>
                         Busco sempre que, de maneira concomitante, agregue conhecimento, e empenho da minha parte.
                         Possuo foco em desenvolvimento web e ando focando meus estudos nas seguintes tecnologias:
-                        <strong> HTML, CSS, Bootstrap 4 e Javascript.</strong> Porém possuo conhecimento sucinto em
+                        <strong> HTML, CSS, Bootstrap 4 e Javascript.</strong> Porém possuo conhecimento em
                         outras
                         tecnológias de
-                        menor nível, como por exemplo:<strong> Java (Servlets), SGBD, Hibernate, Node.js entre
+                        menor nível, como por exemplo:<strong> Java (Servlets), SQL, Hibernate, Node.js entre
                             outros.</strong> Além
                         de certo conhecimento em alguns frameworks modernos, como <strong> React.</strong><br><br>
                         Já concluí matérias importantes do meu curso, como <strong>Lógica de Programação - a qual fui
@@ -78,23 +79,24 @@
                     <span id="descriptionTextEN" style="display: none">Hello there, My name is Eduardo Carvalho, tech
                         lover
                         since I was in childhood. I got my first computer when I was 06 years old ever since I've been
-                        behind keyboards and mouses. I'm studying Software Engine at "Universidade Católica do Salvador -
+                        behind keyboards and mouses. I'm studying Software Engine at "Universidade Católica do Salvador
+                        -
                         Campus Pituaçu" and I just reached the 5º of 8 semesters.
                         <br><br>
                         My priority is learn and, concomitantly, do my best. I'm focusing in Web Development, and I'm
                         studying about these technologies:
-                        <strong> HTML, CSS, Bootstrap 4 and Javascript.</strong> Even though, I have a succint
-                        knowledge in others technologies lower level than those, for example:<strong> Java (Servlets),
-                            SGBD, Hibernate, Node.js etc... </strong>Besides that, I'm enthusiastic in <strong>
+                        <strong> HTML, CSS, Bootstrap 4 and Javascript.</strong> Even though, I have some knowledge in others technologies lower level than those, for example:<strong> Java (Servlets),
+                            SQL, Hibernate, Node.js etc... </strong>Besides that, I'm enthusiastic in <strong>
                             React!</strong> However, I'm sure I need to increase my
-                        knowledge about this last one to consider it mastered. Therefore, I'm scheduling to do that as soon as possible. <br><br>
+                        knowledge about this last one to consider it mastered. Therefore, I'm scheduling to do that as
+                        soon as possible. <br><br>
                         I've finished important modules in my course, like <strong>Programming Logic, - which I was
                             monitor for
-                            one semestre -, Object oriented programming (OOP), SGBD, Mobile development, Web
+                            one semestre -, Object oriented programming (OOP), SQL, Mobile development, Web
                             development</strong>
                         etc...
                         <br><br>
-                        I even got an CCAA's Intermedium Certified, although I'm not fluent at all but I have no problem
+                        I even got an CCAA's Intermedium Certified, Although I'm not fluent at all but I have no problem
                         to communicate in English. I'd appreciate any kind of suggestion or advice, so feel free to text
                         me<strong> (:</strong>
                     </span>
@@ -103,8 +105,7 @@
             <div class="d-flex flex-column p-2 mb-2" id="comopossoserUtilId">
                 <h3><i class="fas fa-wrench"></i> <span id="comoUtil">Como posso ser útil</span></h3>
                 <div id="descricaoComoPossoSerUtil" class="row text-dark text-justify">
-                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id=""
-                        >
+                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id="">
                         <span>HTML 5</span>
                         <div id="icons" class="text-danger">
                             <i class="fas fa-graduation-cap"></i>
@@ -114,8 +115,7 @@
                             <i class="fas fa-graduation-cap"></i>
                         </div>
                     </div>
-                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id=""
-                        >
+                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id="">
                         <span>CSS 3</span>
                         <div id="icons" class="text-danger">
                             <i class="fas fa-graduation-cap"></i>
@@ -125,8 +125,7 @@
                             <i class="fas fa-graduation-cap"></i>
                         </div>
                     </div>
-                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id=""
-                        >
+                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id="">
                         <span>Bootstrap 4</span>
                         <div id="icons" class="text-danger">
                             <i class="fas fa-graduation-cap"></i>
@@ -136,8 +135,7 @@
 
                         </div>
                     </div>
-                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id=""
-                        >
+                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id="">
                         <span>Javascript</span>
                         <div id="icons" class="text-danger">
                             <i class="fas fa-graduation-cap"></i>
@@ -147,8 +145,7 @@
 
                         </div>
                     </div>
-                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id=""
-                        >
+                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id="">
                         <span>Java</span>
                         <div id="icons" class="text-danger">
                             <i class="fas fa-graduation-cap"></i>
@@ -156,8 +153,7 @@
                             <i class="fas fa-graduation-cap"></i>
                         </div>
                     </div>
-                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id=""
-                        >
+                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id="">
                         <span>Git</span>
                         <div id="icons" class="text-danger">
                             <i class="fas fa-graduation-cap"></i>
@@ -166,8 +162,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id=""
-                        >
+                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id="">
                         <span>Hibernate</span>
                         <div id="icons" class="text-danger">
                             <i class="fas fa-graduation-cap"></i>
@@ -175,8 +170,7 @@
                             <i class="fas fa-graduation-cap"></i>
                         </div>
                     </div>
-                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id=""
-                        >
+                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id="">
                         <span>jQuery</span>
                         <div id="icons" class="text-danger">
                             <i class="fas fa-graduation-cap"></i>
@@ -184,8 +178,7 @@
                             <i class="fas fa-graduation-cap"></i>
                         </div>
                     </div>
-                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id=""
-                        >
+                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id="">
                         <span>Node.Js</span>
                         <div id="icons" class="text-danger">
                             <i class="fas fa-graduation-cap"></i>
@@ -193,32 +186,28 @@
 
                         </div>
                     </div>
-                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id=""
-                        >
-                        <span>SGBD</span>
+                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id="">
+                        <span>SQL</span>
                         <div id="icons" class="text-danger">
                             <i class="fas fa-graduation-cap"></i>
                             <i class="fas fa-graduation-cap"></i>
                         </div>
                     </div>
-                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id=""
-                        >
+                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id="">
                         <span>Photoshop</span>
                         <div id="icons" class="text-danger">
                             <i class="fas fa-graduation-cap"></i>
                             <i class="fas fa-graduation-cap"></i>
                         </div>
                     </div>
-                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id=""
-                        >
+                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id="">
                         <span id="metodologiasAgeis">SCRUM</span>
                         <div id="icons" class="text-danger">
                             <i class="fas fa-graduation-cap"></i>
                             <i class="fas fa-graduation-cap"></i>
                         </div>
                     </div>
-                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id=""
-                        >
+                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id="">
                         <span>Flutter</span>
                         <div id="icons" class="text-danger">
                             <i class="fas fa-graduation-cap"></i>
@@ -226,14 +215,15 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id=""
-                        >
+                    <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id="">
                         <span>React</span>
                         <div id="icons" class="text-danger">
                             <i class="fas fa-graduation-cap"></i>
                         </div>
                     </div>
-                     <span id="masterizacao"class="text-muted p-3 mt-2" style="font-size: 0.7em">*As marcações de nível representam a <strong>minha</strong> masterização da tecnologia respectiva entre as demais masterizações.  A propósito, <strong>sou especialista em NADA</strong></span>
+                    <span id="masterizacao" class="text-muted p-3 mt-2" style="font-size: 0.7em">*As marcações de nível
+                        representam a <strong>minha</strong> masterização da tecnologia respectiva entre as demais
+                        masterizações. A propósito, <strong>sou especialista em NADA</strong></span>
 
 
 
@@ -324,14 +314,14 @@
 
 <script>
     function translateContent(idioma) {
-       if (idioma == "br") {
+        if (idioma == "br") {
             document.getElementById("descriptionTextBR").style.display = "block"
             document.getElementById("descriptionTextEN").style.display = "none"
             document.getElementById("quemSouEuTitulo").innerText = "Quem sou eu"
             document.getElementById("empresa").innerText = "Empresa"
             document.getElementById("cargo").innerText = "Cargo"
             document.getElementById("masterizacao").innerHTML = "**As marcações de nível representam a <strong>minha</strong> masterização da tecnologia respectiva entre as demais masterizações. A propósito, <strong>sou especialista em NADA</strong>"
-    
+
         } else if (idioma == "en") {
 
             document.getElementById("descriptionTextBR").style.display = "none"
@@ -340,10 +330,24 @@
             document.getElementById("comoUtil").innerText = "How I can be useful"
             document.getElementById("experienciaTitulo").innerText = "Experience"
             document.getElementById("empresa").innerText = "Company"
-            document.getElementById("cargo").innerText = "Office"          
+            document.getElementById("cargo").innerText = "Office"
             document.getElementById("masterizacao").innerHTML = "**The level marks represent<strong> my </strong>knowlodge about the respective technology. By the way, <strong>I'm expert in NOTHING</strong>"
         } else {
 
+        }
+    }
+
+    function toggleContent(from) {
+
+        if (from == "side") {
+            document.getElementById("sidebar").style.display = "none"
+            document.getElementById("bodyContent").style.display = "flex"
+            document.getElementById("hamburguerToggle").style.display = "block"
+            
+        }else{
+            document.getElementById("sidebar").style.display = "flex"
+            document.getElementById("bodyContent").style.display = "none"
+            document.getElementById("navbar").style.display = "none"
         }
 
     }
