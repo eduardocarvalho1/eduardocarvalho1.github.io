@@ -27,9 +27,9 @@ flex-direction: column;
     justify-content: center;
 }
 #navbar{
- height: 4vh;
+ 
  display: flex;
- width: 75%;
+
  justify-content: flex-end;
  align-items: center;
 
@@ -45,11 +45,12 @@ font-size: 1.2em
   }
   #bodyContent h3{
       font-family: monospace;
+      font-size: 1.8em;
     
   }
   #descricaoComoPossoSerUtil{
       font-family: monospace;
-      font-size: 1.3em;
+      font-size: 1.2em;
   }
   
 

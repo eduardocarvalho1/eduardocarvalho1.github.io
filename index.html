@@ -37,22 +37,71 @@
                     src="core_icon">
             </div>
         </div>
-        <div id="navbar" class="bg-dark justify-contend-end">
-            <i class="fas fa-2x fa-envelope p-1 m-1 text-white"style="cursor: pointer" data-toggle="modal" data-target="#contatoForm"
-                ></i>
+        <div id="navbar" class="bg-dark d-sm-flex d-none justify-contend-end">
+            <img src="brazili-flaf.png" class="p-1" onclick="translateContent('br')"
+                style="cursor: pointer; width: 35px; height: 25px;">
+            <img src="spain_flag.jpg" class="p-1" onclick="translateContent('sp')"
+                style="cursor: pointer; width: 35px; height: 25px;">
+            <img src="english_flag.png" class="p-1" onclick="translateContent('en')"
+                style="cursor: pointer; width: 35px; height: 25px;">
+            <i class="fas fa-2x fa-envelope p-1 m-1 text-white" style="cursor: pointer" data-toggle="modal"
+                data-target="#contatoForm"></i>
 
         </div>
         <div id="bodyContent" class="bg-white p-4 d-flex flex-column flex-fill overflow-auto">
-            <div class="d-flex flex-fill flex-column flex-wrap text-wrap p-2" id="quemSouEu">
-                <h3><i class="fas fa-user"></i> Quem sou eu </h3>
-                <div id="descricaoQuemSouEu" class="text-dark text-justify">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere maximus sem, eu venenatis
-                    orci consequat quis. Donec scelerisque ligula non orci imperdiet interdum. Vivamus dignissim, urna
-                    tincidunt faucibus lobortis, velit velit congue justo, non vestibulum eros dolor ut tellus. In at
-                    velit ac turpis imperdiet tempor. Aliquam in leo eget ligula dignissim semper.
+            <div class="d-flex flex-fill flex-column flex-wrap text-wrap p-2 mb-3" id="quemSouEu">
+                <h3><i class="fas fa-user"></i> <span id="quemSouEuTitulo">Quem sou eu </span></h3>
+                <div id="descricaoQuemSouEu" class="text-dark text-justify" style="font-size: 0.9em;">
+                    <span id="descriptionTextBR">Olá, me chamo Eduardo Carvalho, apaixonado e familiarizado por
+                        informática desde criança, onde
+                        ganhei meu
+                        primeiro computador com 06 anos de idade e desde então me vejo atrás de teclados e mouses.
+                        Estou cursando 5º semestre de Engenharia de Software na UCSAL campus Pituaçu.
+                        <br><br>
+                        Busco sempre que, de maneira concomitante, agregue conhecimento, e empenho da minha parte.
+                        Possuo foco em desenvolvimento web e ando focando meus estudos nas seguintes tecnologias:
+                        <strong> HTML, CSS, Bootstrap 4 e Javascript.</strong> Porém possuo conhecimento relevante em
+                        outras
+                        tecnológias de
+                        mais baixo nível, como por exemplo:<strong> Java (Servlets), Postgres, Hibernate, Node.js entre
+                            outros.</strong> Além
+                        de certo conhecimento em alguns frameworks modernos, como <strong> React.</strong><br><br>
+                        Já concluí matérias importantes do meu curso, como <strong>Lógica de Programação - a qual fui
+                            monitor por
+                            um semestre -, Programação orientada à objetos, Banco de
+                            Dados, Estrutura de Dados, Desenvolvimento Mobile, Desenvolvimento Web </strong>entre
+                        outros...<br><br>
+                        Cheguei até o certificado de conclusão intermediário no CCAA, entretanto, consigo me comunicar
+                        no
+                        ídioma sem dificuldades. Sinta-se livre para me enviar uma mensagem <strong>(:</strong>
+                    </span>
+                    <span id="descriptionTextEN" style="display: none">Hello there, My name is Eduardo Carvalho, tech
+                        lover
+                        since I was in childhood. I got my first computer when I was 06 years old ever since I've been
+                        behind keyboards and mouses. I'm studying Software Engine at "Universade Católica do Salvador -
+                        Campus Pituaçu" and I just reached the 5º of 8 semesters.
+                        <br><br>
+                        My priority is learn and, concomitantly, do my best. I'm focusing in Web Development, and I'm
+                        studying about these technologies:
+                        <strong> HTML, CSS, Bootstrap 4 e Javascript.</strong> Even though, I have a considerable
+                        knowledge in others technologies lower level than those, for example:<strong> Java (Servlets),
+                            Postgres, Hibernate, Node.js entre
+                            outros.</strong>Besides that, I'm enthusiastic in <strong>
+                            React</strong>. However, I need to increase my
+                        knowledge about this last one and I'm scheduling to do that as soon as possible. <br><br>
+                        I've finished important modules in my course, like <strong>Programming Logic, - which I was
+                            monitor for
+                            one semestre -, Object oriented programming (OOP), SGBD, Mobile development, Web
+                            development</strong>
+                        etc...
+                        <br><br>
+                        I even got an CCAA's Intermedium Certified, Although I'm not fluent at all but I have no problem
+                        to communicate in English. I'd appreciate any kind of suggestion or advice, so feel free to text
+                        me<strong> (:</strong>
+                    </span>
                 </div>
             </div>
-            <div class="d-flex flex-column p-2" id="comopossoserUtilId">
+            <div class="d-flex flex-column p-2 mb-2" id="comopossoserUtilId">
                 <h3><i class="fas fa-wrench"></i> Como posso ser útil </h3>
                 <div id="descricaoComoPossoSerUtil" class="row text-dark text-justify">
                     <div class="col-12 col-md-12 col-lg-6 justify-content-between d-flex flex-row" id=""
@@ -189,27 +238,27 @@
 
                 </div>
             </div>
-            <div class="d-flex flex-column p-2" id="quemSouEu">
+            <div class="d-flex flex-column p-2 mb-2" id="quemSouEu">
                 <h3><i class="fas fa-briefcase"></i> Experiências </h3>
 
                 <div id="descricaoExperiencias" class="row mb-2 text-dark text-justify">
                     <div class="col-12 col-md-6 border-right">
                         <h5><strong>Empresa</strong></h5>
-                       
-                           <ul>
-                               <li>Softwell Solutions (2019.6 ~ presente)</li>
-                               <li>UCSAL (2018.6 ~ 2018.12)</li>
-                           </ul>
-                    
+
+                        <ul>
+                            <li>Softwell Solutions (2019.6 ~ presente)</li>
+                            <li>UCSAL (2018.6 ~ 2018.12)</li>
+                        </ul>
+
                     </div>
                     <div class="col-12 col-md-6 border-right">
                         <h5><strong>Cargo</strong></h5>
-                       
-                           <ul>
-                               <li>Estagiário em testes</li>
-                               <li>Monitor em Lógica de</li>
-                           </ul>
-                    
+
+                        <ul>
+                            <li>Estagiário em testes</li>
+                            <li>Monitor em Lógica de Programação</li>
+                        </ul>
+
                     </div>
 
                 </div>
@@ -272,10 +321,28 @@
 </body>
 
 <script>
-    function toggleContent() {
+    function translateContent(idioma) {
+
+        if (idioma == "br") {
+            document.getElementById("descriptionTextBR").style.display = "block"
+            document.getElementById("descriptionTextEN").style.display = "none"
+            document.getElementById("quemSouEuTitulo").innerText = "Quem sou eu"
+
+        } else if (idioma == "en") {
+
+            document.getElementById("descriptionTextBR").style.display = "none"
+            document.getElementById("descriptionTextEN").style.display = "block"
+            document.getElementById("quemSouEuTitulo").innerText = "Who I am"
+        } else {
+
+        }
 
     }
 
+
+    var brDescription = "";
+    var enDescription = "";
+    var spDescription = "";
 </script>
 
 </html>
