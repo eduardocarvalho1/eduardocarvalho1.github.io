@@ -60,6 +60,7 @@ font-size: 1.2em
  #bodyContent, #navbar{
      display: none;
      width: 100vw;
+     flex: 0 0 auto;
      
  }
     #sidebar{
