@@ -6,14 +6,6 @@ html, body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#wrapper {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    flex-wrap: wrap;
-    flex-direction: column;
-    background-color: whitesmoke;
-}
 
 #sidebar {
     min-height: 100vh;
