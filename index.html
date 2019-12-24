@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="w-100 h-100 m-0 p-0" lang="en">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
@@ -22,61 +22,57 @@
         integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
         crossorigin="anonymous"></script>
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
-
-
-
     <title>Portfólio - Eduardo</title>
 </head>
 
-<body>
-    <div id="wrapper" class="d-flex flex-column w-100 h-100 flex-wrap bg-white">
-        <div id="sidebar" class="bg-danger">
-            <div id="sidebarHeader" class="p-3 mt-3 d-flex flex-column">
-                <div id="sidebarToggle" style="cursor: pointer;" class="d-none align-self-end h-25 p-3 ">
-                    <i class=" fas fa-2x fa-times" onclick="toggleContent('side')"></i>
-                </div>
-
-                <img style="width: 200px; height: 200px; border-radius:50%;" class="bg-white border align-self-center"
-                    src="core_icon">
+<body class="w-100 h-100 m-0 p-0 d-flex flex-row w-100 h-100 bg-white">
+    <div id="sidebar" class="bg-danger w-100 d-flex flex-column d-sm-flex">
+        <div id="sidebarHeader" class="p-3 p-sm-4 p-md-5 mt-3 d-flex flex-column">
+            <div id="sidebarToggle" style="cursor: pointer;" class="d-flex d-sm-none align-self-end h-25 p-3">
+                <i class=" fas fa-2x fa-times" onclick="toggleContent('side')"></i>
             </div>
-            <div id="sidebarBody" class="d-flex flex-column h-100 w-100 flex-column mt-4">
-                <div id="textSidebar" class="text-light align-items-center d-flex flex-column w-100 h-100 p-3">
-                    <div id="name" class="p-3">
-                        <h3>
-                            Eduardo Carvalho
-                        </h3>
-                    </div>
-                    <div id="office" class="p-1 mt-2 text-center">
-                        <h5>
-                            Estagiário em Testes na <a href="http://instagram.com/softwellsolutions"
-                                class="text-light text-decoration-none" target="_blank">@softwellsolutions</a>
-                        </h5>
-                    </div>
+            <img style="width: 200px; height: 200px; border-radius:50%;" class="bg-white border align-self-center"
+                src="core_icon">
+        </div>
+        <div id="sidebarBody" class="d-flex flex-column h-100 w-100 flex-column mt-4">
+            <div id="textSidebar" class="text-light text-center align-items-center d-flex flex-column w-100 h-100 p-3">
+                <div id="name" class="p-3">
+                    <h3>
+                        Eduardo Carvalho
+                    </h3>
                 </div>
-          
+                <div id="office" class="p-1 mt-2 text-center">
+                    <h5>
+                        Estagiário em Testes na <a href="http://instagram.com/softwellsolutions"
+                            class="text-light text-decoration-none" target="_blank">@softwellsolutions</a>
+                    </h5>
+                </div>
+            </div>
 
-                <div id="socialMedias" class="d-flex justify-content-around text-light mb-3">
-                    <div class="fab fa-2x fa-instagram "></div>
-                    <div class="fab fa-2x fa-github"></div>
-                    <div class="fab fa-2x fa-stack-overflow"></div>
-                    <div class="fab fa-2x fa-linkedin"></div>
-                </div>
+            <div id="socialMedias" class="d-flex justify-content-around text-light mb-4">
+                <div class="fab fa-2x fa-instagram"></div>
+                <div class="fab fa-2x fa-github"></div>
+                <div class="fab fa-2x fa-stack-overflow"></div>
+                <div class="fab fa-2x fa-linkedin"></div>
             </div>
         </div>
-        <div id="navbar" class="bg-dark p-2 justify-contend-end">
-            <img src="brazili-flaf.png" class="p-1" onclick="translateContent('br')"
+    </div>
+    <div class="d-flex flex-column flex-fill">
+        <div id="navbar" class="bg-dark p-2 justify-content-end align-items-center d-none d-sm-flex">
+            <img src="brazili-flaf.png" class="p-1 m-1" onclick="translateContent('br')"
                 style="cursor: pointer; width: 35px; height: 25px;">
             <!--  <img src="spain_flag.jpg" class="p-1" onclick="translateContent('sp')"
-                style="cursor: pointer; width: 35px; height: 25px;"> -->
-            <img src="english_flag.png" class="p-1" onclick="translateContent('en')"
+                    style="cursor: pointer; width: 35px; height: 25px;"> -->
+            <img src="english_flag.png" class="p-1 m-1" onclick="translateContent('en')"
                 style="cursor: pointer; width: 35px; height: 25px;">
             <i class="fas fa-2x fa-envelope p-1 m-1 text-white" style="cursor: pointer" data-toggle="modal"
                 data-target="#contatoForm"></i>
-
         </div>
-        <div id="bodyContent" class="bg-white p-4 flex-column flex-fill overflow-auto">
-            <div id="hamburguerToggle" onclick="toggleContent('')" class="fas fa-bars align-self-end mr-4 fa-2x"
-                style="display: none; cursor: pointer; position: fixed; opacity: 0.4;"></div>
+        <div id="bodyContent"
+            class="bg-white p-4 flex-column flex-fill justify-content-between overflow-auto d-none d-sm-flex">
+            <div id="hamburguerToggle" onclick="toggleContent()"
+                class="d-sm-none position-fixed fas fa-bars align-self-end mr-4 fa-2x"
+                style="cursor: pointer; opacity: 0.4;"></div>
             <div class="d-flex flex-fill flex-column flex-wrap text-wrap p-2 mb-3" id="quemSouEu">
                 <h3><i class="fas fa-user"></i> <span id="quemSouEuTitulo">Quem sou eu </span></h3>
                 <div id="descricaoQuemSouEu" class="text-dark text-justify" style="font-size: 0.9em;">
@@ -94,16 +90,19 @@
                         menor nível, como por exemplo:<strong> Java (Servlets), SQL, Hibernate, Node.js entre
                             outros.</strong> Além
                         de certo conhecimento em alguns frameworks modernos, como <strong> React.</strong><br><br>
-                        Já concluí matérias importantes do meu curso, como <strong>Lógica de Programação - a qual fui
+                        Já concluí matérias importantes do meu curso, como <strong>Lógica de Programação - a qual
+                            fui
                             monitor por
                             um semestre -, Programação orientada à objetos, Banco de
                             Dados, Estrutura de Dados, Desenvolvimento Mobile, Desenvolvimento Web </strong>entre
                         outros...<br><br>
-                        Cheguei até o certificado de conclusão intermediário no CCAA, entretanto, consigo me comunicar
+                        Cheguei até o certificado de conclusão intermediário no CCAA, entretanto, consigo me
+                        comunicar
                         no
                         ídioma sem dificuldades. Sinta-se livre para me enviar uma mensagem <strong>(:</strong>
                     </span>
-                    <span id="descriptionTextEN" style="display: none">Hello there, My name is Eduardo Carvalho, tech
+                    <span id="descriptionTextEN" style="display: none">Hello there, My name is Eduardo Carvalho,
+                        tech
                         lover
                         since childhood. I got my first computer when I was 06 years old ever since I've been
                         behind keyboards and mouses. I'm studying Software Engineering at "Universidade Católica do
@@ -111,23 +110,29 @@
                         -
                         Campus Pituaçu" and I just reached the 5th of 8 semesters.
                         <br><br>
-                        My priority is learn and, concomitantly, do my best. I'm focusing in Web Development, and I'm
+                        My priority is learn and, concomitantly, do my best. I'm focusing in Web Development, and
+                        I'm
                         studying about these technologies:
-                        <strong> HTML, CSS, Bootstrap 4 and Javascript.</strong> Even though, I have some knowledge in
+                        <strong> HTML, CSS, Bootstrap 4 and Javascript.</strong> Even though, I have some knowledge
+                        in
                         other technologies lower level than those, for example:<strong> Java (Servlets),
                             SQL, Hibernate, Node.js etc... </strong>Besides that, I'm enthusiastic in <strong>
                             React!</strong> However, I'm sure I need to increase my
-                        knowledge about this last one to consider it mastered. Therefore, I'm scheduling to do that as
+                        knowledge about this last one to consider it mastered. Therefore, I'm scheduling to do that
+                        as
                         soon as possible. <br><br>
                         I've finished important modules in my course, like <strong>Programming Logic, - which I was
                             monitor for
-                            one semester -, Object oriented programming (OOP), Database, Data structure, Mobile development,
+                            one semester -, Object oriented programming (OOP), Database, Data structure, Mobile
+                            development,
                             Web
                             development</strong>
                         etc...
                         <br><br>
-                        I even got a CCAA's Intermedium Certified, Although I'm not fluent at all but I have no problem
-                        to communicate in English. I'd appreciate any kind of suggestion or advice, so feel free to text
+                        I even got a CCAA's Intermedium Certified, Although I'm not fluent at all but I have no
+                        problem
+                        to communicate in English. I'd appreciate any kind of suggestion or advice, so feel free to
+                        text
                         me<strong> (:</strong>
                     </span>
                 </div>
@@ -251,7 +256,8 @@
                             <i class="fas fa-graduation-cap"></i>
                         </div>
                     </div>
-                    <span id="masterizacao" class="text-muted p-3 mt-2" style="font-size: 0.7em">*As marcações de nível
+                    <span id="masterizacao" class="text-muted p-3 mt-2" style="font-size: 0.7em">*As marcações de
+                        nível
                         representam a <strong>minha</strong> masterização da tecnologia respectiva entre as demais
                         masterizações. A propósito, <strong>sou especialista em NADA</strong></span>
 
@@ -286,11 +292,7 @@
                 </div>
             </div>
         </div>
-
     </div>
-    </div>
-
-
     <div class="modal fade" id="contatoForm" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -327,64 +329,70 @@
                                 rows="3"></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-block btn-outline-primary"><i
+                        <button type="submit" class="btn btn-flex btn-outline-primary"><i
                                 class="fas fa-2x fa-envelope"></i></button>
-
-
-
                     </form>
                 </div>
                 <div class="modal-footer">
-<span class="text-muted">"Web is virtual space. Anything is possible. If it's not, I must be doing-it-wrong." - Unknown Author</span>
+                    <span class="text-muted">"Web is virtual space. Anything is possible. If it's not, I must be
+                        doing-it-wrong." - Unknown Author</span>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        function translateContent(idioma) {
+            if (idioma == "br") {
+                document.getElementById("descriptionTextBR").style.display = "block"
+                document.getElementById("descriptionTextEN").style.display = "none"
+                document.getElementById("quemSouEuTitulo").innerText = "Quem sou eu"
+                document.getElementById("empresa").innerText = "Empresa"
+                document.getElementById("cargo").innerText = "Cargo"
+                document.getElementById("masterizacao").innerHTML = "**As marcações de nível representam a <strong>minha</strong> masterização da tecnologia respectiva entre as demais masterizações. A propósito, <strong>sou especialista em NADA</strong>"
+            } else if (idioma == "en") {
+                document.getElementById("descriptionTextBR").style.display = "none"
+                document.getElementById("descriptionTextEN").style.display = "block"
+                document.getElementById("quemSouEuTitulo").innerText = "Who I am"
+                document.getElementById("comoUtil").innerText = "How I can be useful"
+                document.getElementById("experienciaTitulo").innerText = "Experience"
+                document.getElementById("empresa").innerText = "Company"
+                document.getElementById("cargo").innerText = "Office"
+                document.getElementById("masterizacao").innerHTML = "**The level marks represent<strong> my </strong>knowlodge about the respective technology. By the way, <strong>I'm expert in NOTHING</strong>"
+            } else {
+
+            }
+        }
+
+        function toggleContent(from) {
+            var navbar = document.getElementById("navbar");
+            var sidebar = document.getElementById("sidebar");
+            var bodyContent = document.getElementById("bodyContent");
+
+            if (from == "side") {
+                if (sidebar.classList.contains("d-flex")) sidebar.classList.remove("d-flex");
+                if (!sidebar.classList.contains("d-none")) sidebar.classList.add("d-none");
+
+                if (bodyContent.classList.contains("d-none")) bodyContent.classList.remove("d-none");
+                if (!bodyContent.classList.contains("d-flex")) bodyContent.classList.add("d-flex");
+
+                if (navbar.classList.contains("d-none")) navbar.classList.remove("d-none");
+                if (!navbar.classList.contains("d-flex")) navbar.classList.add("d-flex");
+            } else {
+                if (sidebar.classList.contains("d-none")) sidebar.classList.remove("d-none");
+                if (!sidebar.classList.contains("d-flex")) sidebar.classList.add("d-flex");
+
+                if (bodyContent.classList.contains("d-flex")) bodyContent.classList.remove("d-flex");
+                if (!bodyContent.classList.contains("d-flex")) bodyContent.classList.add("d-none");
+
+                if (navbar.classList.contains("d-flex")) navbar.classList.remove("d-flex");
+                if (!navbar.classList.contains("d-none")) navbar.classList.add("d-none");
+            }
+        }
+
+        var brDescription = "";
+        var enDescription = "";
+        var spDescription = "";
+    </script>
 </body>
-
-<script>
-    function translateContent(idioma) {
-        if (idioma == "br") {
-            document.getElementById("descriptionTextBR").style.display = "block"
-            document.getElementById("descriptionTextEN").style.display = "none"
-            document.getElementById("quemSouEuTitulo").innerText = "Quem sou eu"
-            document.getElementById("empresa").innerText = "Empresa"
-            document.getElementById("cargo").innerText = "Cargo"
-            document.getElementById("masterizacao").innerHTML = "**As marcações de nível representam a <strong>minha</strong> masterização da tecnologia respectiva entre as demais masterizações. A propósito, <strong>sou especialista em NADA</strong>"
-
-        } else if (idioma == "en") {
-
-            document.getElementById("descriptionTextBR").style.display = "none"
-            document.getElementById("descriptionTextEN").style.display = "block"
-            document.getElementById("quemSouEuTitulo").innerText = "Who I am"
-            document.getElementById("comoUtil").innerText = "How I can be useful"
-            document.getElementById("experienciaTitulo").innerText = "Experience"
-            document.getElementById("empresa").innerText = "Company"
-            document.getElementById("cargo").innerText = "Office"
-            document.getElementById("masterizacao").innerHTML = "**The level marks represent<strong> my </strong>knowlodge about the respective technology. By the way, <strong>I'm expert in NOTHING</strong>"
-        } else {
-
-        }
-    }
-
-    function toggleContent(from) {
-
-        if (from == "side") {
-            document.getElementById("sidebar").style.display = "none"
-            document.getElementById("bodyContent").style.display = "flex"
-            document.getElementById("hamburguerToggle").style.display = "block"
-
-        } else {
-            document.getElementById("sidebar").style.display = "flex"
-            document.getElementById("bodyContent").style.display = "none"
-            document.getElementById("navbar").style.display = "none"
-        }
-
-    }
-
-    var brDescription = "";
-    var enDescription = "";
-    var spDescription = "";
-</script>
 
 </html>
