@@ -67,8 +67,8 @@
                 style="cursor: pointer; width: 35px; height: 25px;">
             <i class="fas fa-2x fa-envelope p-1 m-1 text-white" style="cursor: pointer" data-toggle="modal"
                 data-target="#contatoForm"></i>
-              <i class="fas fa-2x fa-user-secret p-1 m-1 text-white" style="cursor: pointer" data-toggle="modal"
-                data-target="#contatoForm"></i>
+            <i class="fas fa-2x fa-user-secret p-1 m-1 text-white" style="cursor: pointer" data-toggle="modal"
+                data-target="#passwordForm"></i>
         </div>
         <div id="bodyContent"
             class="bg-white p-4 flex-column flex-fill justify-content-between overflow-auto d-none d-sm-flex">
@@ -342,12 +342,30 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="passwordForm" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg-dark p-2">
+                <div class="modal-body d-flex flex-column align-items-center justify-content-center p-1">
+                    <span class="text-success font-weight-bold" style="font-family: monospace; font-size: 2.2rem;">Enter
+                        password to unlock...</span>
+                    <div class="d-flex w-100 justify-content-center p-1 mt-2">
+                        <input type="password" id="inputHacking""
+                            class=" text-success border align-self-center w-75"
+                            style="letter-spacing: 10px; font-weight: bold; font-family: monospace; font-size: 2rem;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script>
+
         function translateContent(idioma) {
             if (idioma == "br") {
                 document.getElementById("descriptionTextBR").style.display = "block"
                 document.getElementById("descriptionTextEN").style.display = "none"
                 document.getElementById("quemSouEuTitulo").innerText = "Quem sou eu"
+                document.getElementById("comoUtil").innerText = "Como eu posso ser útil"
                 document.getElementById("empresa").innerText = "Empresa"
                 document.getElementById("cargo").innerText = "Cargo"
                 document.getElementById("masterizacao").innerHTML = "**As marcações de nível representam a <strong>minha</strong> masterização da tecnologia respectiva entre as demais masterizações. A propósito, <strong>sou especialista em NADA</strong>"
@@ -391,9 +409,28 @@
             }
         }
 
+
+
+        $('input[type=password]').on('keydown', function (e) {
+            if (e.which == 13) {
+                e.preventDefault();
+                var password = document.getElementById("inputHacking").value;
+                if (password == PW_VALIDATE) {
+                    hackingLayoutDesign(password);
+                }
+            }
+        });
+
+        function hackingLayoutDesign() {
+            if(password === PW_VALIDATE){
+                console.log("hackingLayout")
+            }
+
+        }
         var brDescription = "";
         var enDescription = "";
         var spDescription = "";
+        const PW_VALIDATE = "chihiro";
     </script>
 </body>
 
